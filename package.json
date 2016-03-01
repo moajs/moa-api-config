@@ -18,7 +18,7 @@
   "config": {
     "moa_api": {
       "pattern": "api-*",
-      "routes_dir": "app/routes",
+      "routes_dir": "app/routes"
     }
   },
   "homepage": "https://github.com/moajs/moa-api-config#readme",
