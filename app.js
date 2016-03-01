@@ -1,9 +1,5 @@
 var app = require('base2')({
   // debug: true,
-  root:__dirname,
-  "views": "views",
-  "routes": "routes2",
-  "public": "public",
 })
 
 // console.log(app);
