@@ -1,9 +1,9 @@
 module.exports = function(base2_app, root_dir) {
   var conf = config(root_dir)
   
-  var module_names = get_dependency_modules(root_dir, conf);
+  var api_names = get_dependency_modules(root_dir, conf);
   
-  module_names.forEach(function(name){
+  api_names.forEach(function(name){
     base2_app.mount_routes(root_dir + '/node_modules/'+ name + '/' + conf.routes_dir);
   })
 }
@@ -25,7 +25,11 @@ function get_dependency_modules(root_dir, config){
   //如果模块名称和config.moa_api.pattern匹配，使用mount_routes挂载
   if (pkg.dependencies) {
     for(var dep in pkg.dependencies){
-      console.log(dep)
+      var name = get_api_name(dep, config.pattern);
+      if(name){
+        console.log(dep);
+        api_names.push(dep);
+      }
     }
   }
   

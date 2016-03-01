@@ -17,7 +17,7 @@
   },
   "config": {
     "moa_api": {
-      "pattern": "api-*",
+      "pattern": "content",
       "routes_dir": "app/routes"
     }
   },
