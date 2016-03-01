@@ -9,6 +9,8 @@ npm i -S moa-api-config
 
 ## Usages
 
+in app.js
+
 ```
 var app = require('base2')({
   // debug: true,
@@ -36,7 +38,7 @@ app.start(3019);
   …
   "config": {
     "moa_api": {
-      "pattern": "api-*",
+      "pattern": "hz-api-*",
       "routes_dir": "app/routes",
     }
   }
