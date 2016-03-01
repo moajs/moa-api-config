@@ -9,6 +9,8 @@ npm i -S moa-api-config
 
 ## Usages
 
+### base2
+
 in app.js
 
 ```
@@ -28,6 +30,27 @@ require('moa-api-config')(app, __dirname)
 
 app.start(3019);
 ```
+
+### express
+
+```
+var express = require('express')
+var app = express()
+
+app.mount_routes = require('mount-routes');
+
+// console.log(app);
+// app.mount_routes(__dirname + '/routes2');
+// app.mount_plugins(__dirname + '/plugins');
+
+require('moa-api-config')(app, __dirname)
+
+app.listen(3000)
+```
+
+### koa
+
+把mount-routes替换成mount-koa-routes即可，其他都是和express一样的。
 
 ## Configure
 
