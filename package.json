@@ -1,0 +1,29 @@
+{
+  "name": "moa-api-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moajs/moa-api-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moajs/moa-api-config/issues"
+  },
+  "config": {
+    "moa_api": {
+      "pattern": "api-*",
+      "routes_dir": "app/routes",
+    }
+  },
+  "homepage": "https://github.com/moajs/moa-api-config#readme",
+  "devDependencies": {
+    "base2": "^1.0.18",
+    "debug": "^2.2.0"
+  }
+}
