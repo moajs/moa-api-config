@@ -1,5 +1,6 @@
 # moa-api-config
 
+读取package.json里的模块，作为api模块，加载里面的路由目录即可
 
 ## Install
 
@@ -16,10 +17,6 @@ in app.js
 ```
 var app = require('base2')({
   // debug: true,
-  root:__dirname,
-  "views": "views",
-  "routes": "routes2",
-  "public": "public",
 })
 
 // console.log(app);
@@ -32,6 +29,8 @@ app.start(3019);
 ```
 
 ### express
+
+in app.js
 
 ```
 var express = require('express')
